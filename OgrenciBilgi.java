@@ -1,7 +1,7 @@
 /*
- * Ad Soyad: [ADINIZI BURAYA YAZIN]
- * Ogrenci No: [OGRENCI NUMARANIZI BURAYA YAZIN]
- * Tarih: [TARIHI BURAYA YAZIN]
+ * Ad Soyad:Ebrar Sude Yıldırım
+ * Ogrenci No: 250541104
+ * Tarih: 05.11.2025
  * Aciklama: Gorev 1 - Ogrenci Bilgi Sistemi
  * 
  * Bu program kullanicidan ogrenci bilgilerini alir ve
@@ -14,12 +14,12 @@ import java.util.Scanner;
 public class OgrenciBilgi {
     public static void main(String[] args) {
         // Scanner objesi olusturun
-        
+         Scanner input = new Scanner(System.in);
         
         // Degisken tanimlamalari
-        // String ad, soyad;
+        // String ad, soyad; 
         // int ogrenciNo, yas;
-        // double gpa;
+        // double gpa; 
         
         
         // Kullanicidan bilgileri alin
@@ -27,31 +27,41 @@ public class OgrenciBilgi {
         System.out.println();
         
         // Ad
-        
+        System.out.print("Ad:");
+        ad = input.next();
         
         // Soyad
-        
+        System.out.print("Soyad:");
+        soyad = input.next();
         
         // Ogrenci No
-        
+         System.out.print("Öğrenci Numarası: ");
+        ogrenciNo = input.nextInt();
         
         // Yas
-        
+         System.out.print("Yaş: ");
+        yas = input.nextInt();
         
         // GPA
-        
+        System.out.print("GPA (0.00 - 4.00): 3.00");
+        gpa = input.nextDouble();
         
         // Bilgileri ekrana yazdirin
         System.out.println("\n=== OGRENCI BILGI SISTEMI ===");
+        System.out.printf("Ad Soyad: %s %s%n", ad, soyad);
+        System.out.printf("Ogrenci No: %d%n", ogrenciNo);
+        System.out.printf("Yas: %d%n", yas);
+        System.out.printf("GPA: %.2f%n", gpa);
+
+        
         
         // COZUMUNUZU BURAYA YAZIN
+         if (gpa >= 2.5) {
+            System.out.println("Durum: Basarili Ogrenci");
+        } else {
+            System.out.println("Durum: Gelistirilmeli Ogrenci");
+        }
         
-        
-        
-        
-        
-        
-
         
         
         // Scanner'i kapatin (önemli pratik)
